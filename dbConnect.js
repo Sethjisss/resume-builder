@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const URL = 'mongodb+srv://PravinPilania:Pravindb@cluster0.etazzzi.mongodb.net/resume-builder'
+const URL = 'mongodb+srv://PravinPilania:Pravindb@cluster0.etazzzi.mongodb.net/resume-builder?retryWrites=true&w=majority'
 mongoose.connect(URL , {useUnifiedTopology:true , useNewUrlParser:true})
 
 const connection = mongoose.connection
